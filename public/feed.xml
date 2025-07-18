@@ -1,0 +1,164 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>jpegg.dev</title>
+      <link>https://jpegg.dev/blog</link>
+      <description>A blog about artificial intelligence, web development, programming, and technology.</description>
+      <language>en-us</language>
+      <managingEditor>jpeggdev@gmail.com (Jeff Pegg)</managingEditor>
+      <webMaster>jpeggdev@gmail.com (Jeff Pegg)</webMaster>
+      <lastBuildDate>Sun, 13 Jul 2025 22:30:00 GMT</lastBuildDate>
+      <atom:link href="https://jpegg.dev/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://jpegg.dev/blog/ai/specialized-ai-models</guid>
+    <title>Specialized AI Models: The Rise of Purpose-Built Intelligence</title>
+    <link>https://jpegg.dev/blog/ai/specialized-ai-models</link>
+    <description>The era of one-size-fits-all AI is ending. Specialized AI models—narrow, highly-customized systems designed for specific business applications—are delivering superior performance, lower costs, and better security than general-purpose alternatives. Discover how to build and deploy specialized AI that outperforms generic solutions.</description>
+    <pubDate>Sun, 13 Jul 2025 22:30:00 GMT</pubDate>
+    <author>jpeggdev@gmail.com (Jeff Pegg)</author>
+    <category>Specialized-AI</category><category>Custom-Models</category><category>Domain-Specific-AI</category><category>AI-Optimization</category><category>Business-AI</category><category>Finetune-AI</category><category>Model-Specialization</category><category>AI-Strategy</category>
+  </item>
+
+  <item>
+    <guid>https://jpegg.dev/blog/ai/alternative-code-generation-tools</guid>
+    <title>The Great AI Code Generation War: Beyond GitHub Copilot&#39;s Dominance</title>
+    <link>https://jpegg.dev/blog/ai/alternative-code-generation-tools</link>
+    <description>The AI code generation landscape is heating up with fierce competition. Tabnine, Codeium, CodeWhisperer, and emerging players are challenging GitHub Copilot&#39;s dominance with innovative features, better performance, and specialized capabilities. Here&#39;s your guide to navigating the new battlefield of AI-powered coding assistants.</description>
+    <pubDate>Sun, 13 Jul 2025 21:15:00 GMT</pubDate>
+    <author>jpeggdev@gmail.com (Jeff Pegg)</author>
+    <category>AI-Code-Generation</category><category>GitHub-Copilot</category><category>Tabnine</category><category>Codeium</category><category>Code-Whisperer</category><category>Coding-Assistants</category><category>Developer-Tools</category><category>AI-Competition</category>
+  </item>
+
+  <item>
+    <guid>https://jpegg.dev/blog/ai/ai-roi-measurement</guid>
+    <title>AI ROI Measurement: From Hype to Hard Numbers</title>
+    <link>https://jpegg.dev/blog/ai/ai-roi-measurement</link>
+    <description>The AI experimentation phase is over. Organizations are now demanding measurable outcomes, proven cost reductions, and tangible business value from their AI investments. Here&#39;s your comprehensive guide to measuring AI ROI, building business cases, and proving the value of AI initiatives in software development and beyond.</description>
+    <pubDate>Sun, 13 Jul 2025 16:15:00 GMT</pubDate>
+    <author>jpeggdev@gmail.com (Jeff Pegg)</author>
+    <category>AI-ROI</category><category>Business-Value</category><category>AI-Metrics</category><category>Cost-Reduction</category><category>Productivity-Gains</category><category>AI-Strategy</category><category>Measurable-Outcomes</category><category>Business-Case</category>
+  </item>
+
+  <item>
+    <guid>https://jpegg.dev/blog/ai/ai-code-quality-crisis</guid>
+    <title>The AI Code Quality Crisis: Confronting the 4x Surge in Copy-Paste Programming</title>
+    <link>https://jpegg.dev/blog/ai/ai-code-quality-crisis</link>
+    <description>AI-generated code is creating an unprecedented quality crisis in software development. With a 400% increase in code clones and copy-paste patterns, we&#39;re facing technical debt and maintenance nightmares. Here&#39;s how to identify, prevent, and solve this growing problem while still leveraging AI&#39;s benefits.</description>
+    <pubDate>Sun, 13 Jul 2025 14:45:00 GMT</pubDate>
+    <author>jpeggdev@gmail.com (Jeff Pegg)</author>
+    <category>AI</category><category>Code-Quality</category><category>Technical-Debt</category><category>Software-Maintenance</category><category>Copy-Paste</category><category>Code-Clones</category><category>Best-Practices</category><category>Quality-Assurance</category>
+  </item>
+
+  <item>
+    <guid>https://jpegg.dev/blog/ai/agentic-ai-development</guid>
+    <title>Agentic AI Development: The Dawn of Autonomous Programming Partners</title>
+    <link>https://jpegg.dev/blog/ai/agentic-ai-development</link>
+    <description>Autonomous AI agents are revolutionizing software development by working independently without human oversight. From Anthropic&#39;s Claude to OpenAI&#39;s upcoming January launch, these intelligent systems are transforming how we approach complex coding challenges and architectural decisions.</description>
+    <pubDate>Sun, 13 Jul 2025 14:00:00 GMT</pubDate>
+    <author>jpeggdev@gmail.com (Jeff Pegg)</author>
+    <category>AI</category><category>Agentic-AI</category><category>Autonomous-Agents</category><category>Software-Development</category><category>Programming</category><category>Innovation</category><category>Anthropic</category><category>OpenAI</category>
+  </item>
+
+  <item>
+    <guid>https://jpegg.dev/blog/ai/ai-safety-explainable-ai</guid>
+    <title>AI Safety and Explainable AI: Building Transparent, Testable Systems</title>
+    <link>https://jpegg.dev/blog/ai/ai-safety-explainable-ai</link>
+    <description>As AI systems become more powerful and pervasive in software development, the need for transparent, explainable, and testable AI has never been more critical. From debugging AI-generated code to understanding decision-making processes, XAI is transforming how we build trustworthy AI systems that developers and users can understand and verify.</description>
+    <pubDate>Sat, 12 Jul 2025 21:00:00 GMT</pubDate>
+    <author>jpeggdev@gmail.com (Jeff Pegg)</author>
+    <category>AI-Safety</category><category>Explainable-AI</category><category>XAI</category><category>Transparency</category><category>Trustable-AI</category><category>AI-Governance</category><category>Ethical-AI</category><category>AI-Testing</category><category>Interpretability</category>
+  </item>
+
+  <item>
+    <guid>https://jpegg.dev/blog/ai/edge-ai-development</guid>
+    <title>Edge AI Development: Bringing Intelligence to the Device</title>
+    <link>https://jpegg.dev/blog/ai/edge-ai-development</link>
+    <description>The future of AI isn&#39;t in the cloud—it&#39;s running directly on your users&#39; devices. Edge AI development is revolutionizing privacy, performance, and offline capabilities. From real-time inference to privacy-first architectures, discover how to build AI applications that run anywhere, anytime, without compromising user data or experience.</description>
+    <pubDate>Wed, 09 Jul 2025 20:20:00 GMT</pubDate>
+    <author>jpeggdev@gmail.com (Jeff Pegg)</author>
+    <category>Edge-AI</category><category>On-Device-AI</category><category>Privacy</category><category>Performance</category><category>Offline-AI</category><category>Mobile-AI</category><category>Web-Assembly</category><category>TensorFlow-Lite</category><category>Core-ML</category>
+  </item>
+
+  <item>
+    <guid>https://jpegg.dev/blog/ai/ai-revolution-2025</guid>
+    <title>The AI Revolution in 2025: Top Trends Every Developer Should Know</title>
+    <link>https://jpegg.dev/blog/ai/ai-revolution-2025</link>
+    <description>The AI landscape is evolving at breakneck speed, and 2025 is shaping up to be a pivotal year. As developers, staying ahead of these trends isn&#39;t just about keeping up—it&#39;s about leveraging the next wave of innovation to build better software. Here are the most impactful AI trends that are reshaping how we code, build, and deploy applications.</description>
+    <pubDate>Tue, 08 Jul 2025 12:00:00 GMT</pubDate>
+    <author>jpeggdev@gmail.com (Jeff Pegg)</author>
+    <category>AI</category><category>Machine-Learning</category><category>Software-Development</category><category>Tech-Trends</category><category>Dev-Tools</category><category>Artificial-Intelligence</category><category>Programming</category><category>Innovation</category>
+  </item>
+
+  <item>
+    <guid>https://jpegg.dev/blog/ai/beyond-chat-interfaces</guid>
+    <title>Beyond Chat Interfaces: The Next Evolution of AI Integration in Development</title>
+    <link>https://jpegg.dev/blog/ai/beyond-chat-interfaces</link>
+    <description>The era of chatbot UIs for AI development tools is ending. Forward-thinking teams are pioneering creative integrations that seamlessly weave AI into their workflows—from contextual code suggestions to autonomous background processing. Discover how to move beyond chat and build truly integrated AI experiences.</description>
+    <pubDate>Sun, 06 Jul 2025 19:45:00 GMT</pubDate>
+    <author>jpeggdev@gmail.com (Jeff Pegg)</author>
+    <category>AI</category><category>User-Interface</category><category>Developer-Experience</category><category>Integration</category><category>Workflow-Automation</category><category>UX</category><category>Innovation</category><category>Productivity</category>
+  </item>
+
+  <item>
+    <guid>https://jpegg.dev/blog/ai/reasoning-based-ai-models</guid>
+    <title>Reasoning-Based AI Models: How o1 and o3 Are Revolutionizing Problem-Solving</title>
+    <link>https://jpegg.dev/blog/ai/reasoning-based-ai-models</link>
+    <description>OpenAI&#39;s groundbreaking o1 and o3 models represent a paradigm shift in AI reasoning, breaking complex problems into step-by-step solutions. This new approach to AI thinking is transforming how we tackle sophisticated programming challenges and architectural decisions.</description>
+    <pubDate>Thu, 03 Jul 2025 18:30:00 GMT</pubDate>
+    <author>jpeggdev@gmail.com (Jeff Pegg)</author>
+    <category>AI</category><category>Reasoning-AI</category><category>OpenAI</category><category>o1</category><category>o3</category><category>Problem-Solving</category><category>Programming</category><category>Step-By-Step</category><category>Logical-Reasoning</category>
+  </item>
+
+  <item>
+    <guid>https://jpegg.dev/blog/ai/multimodal-ai-programming</guid>
+    <title>Multimodal AI Programming: Beyond Text in Software Development</title>
+    <link>https://jpegg.dev/blog/ai/multimodal-ai-programming</link>
+    <description>The future of AI-assisted development extends far beyond text-based interactions. Multimodal AI systems that seamlessly handle text, images, audio, and video are revolutionizing how we build, debug, and collaborate on software projects. From visual debugging to voice-driven coding, this new paradigm is reshaping the developer experience.</description>
+    <pubDate>Mon, 30 Jun 2025 17:00:00 GMT</pubDate>
+    <author>jpeggdev@gmail.com (Jeff Pegg)</author>
+    <category>AI</category><category>Multimodal-AI</category><category>Programming</category><category>Voice</category><category>Visual</category><category>Audio-Processing</category><category>Video-Analysis</category><category>Developer-Experience</category>
+  </item>
+
+  <item>
+    <guid>https://jpegg.dev/blog/ai/agent-to-agent-protocol-revolution</guid>
+    <title>The Agent-to-Agent Protocol Revolution: How AI Systems Are Learning to Collaborate</title>
+    <link>https://jpegg.dev/blog/ai/agent-to-agent-protocol-revolution</link>
+    <description>Imagine AI agents from different companies seamlessly working together—a Claude assistant coordinating with a Gemini specialist, or a GitHub Copilot agent handing off tasks to a Salesforce automation. This isn&#39;t science fiction anymore. With the emergence of agent-to-agent protocols like Google&#39;s A2A and Anthropic&#39;s MCP, we&#39;re witnessing the birth of an AI ecosystem where artificial intelligence systems can discover, communicate, and collaborate without human intervention.</description>
+    <pubDate>Fri, 27 Jun 2025 15:45:00 GMT</pubDate>
+    <author>jpeggdev@gmail.com (Jeff Pegg)</author>
+    <category>AI</category><category>Agentic-AI</category><category>Protocols</category><category>Development</category><category>A2A</category><category>MCP</category><category>Innovation</category>
+  </item>
+
+  <item>
+    <guid>https://jpegg.dev/blog/ai/agentic-ai-marketing-term</guid>
+    <title>The &quot;Agent&quot; in Agentic AI Is a Marketing Term</title>
+    <link>https://jpegg.dev/blog/ai/agentic-ai-marketing-term</link>
+    <description>The promise of an autonomous AI agent that can take a high-level goal and execute it is arguably the holy grail of applied AI. Picture telling your computer &quot;Plan and book a vacation to Japan&quot; and returning hours later to find flights booked, hotels reserved, and an itinerary crafted. The demos are compelling, the venture capital is flowing, and every AI company now claims to be building &quot;agentic AI.&quot;</description>
+    <pubDate>Tue, 24 Jun 2025 14:30:00 GMT</pubDate>
+    <author>jpeggdev@gmail.com (Jeff Pegg)</author>
+    <category>AI</category><category>Agentic-AI</category><category>Opinion</category>
+  </item>
+
+  <item>
+    <guid>https://jpegg.dev/blog/ai/ai-powered-development-tools</guid>
+    <title>Getting Started with AI-Powered Development Tools</title>
+    <link>https://jpegg.dev/blog/ai/ai-powered-development-tools</link>
+    <description>Exploring how AI is transforming the way we write code and build applications. A look at the latest tools and techniques that are changing the development landscape.</description>
+    <pubDate>Sat, 21 Jun 2025 13:15:00 GMT</pubDate>
+    <author>jpeggdev@gmail.com (Jeff Pegg)</author>
+    <category>AI</category><category>Development</category><category>Tools</category>
+  </item>
+
+  <item>
+    <guid>https://jpegg.dev/blog/ai/future-ai-collaboration</guid>
+    <title>The Future of Human-AI Collaboration in Software Development</title>
+    <link>https://jpegg.dev/blog/ai/future-ai-collaboration</link>
+    <description>Thoughts on how AI will reshape software development and what it means for developers. Exploring the opportunities and challenges ahead.</description>
+    <pubDate>Wed, 18 Jun 2025 12:00:00 GMT</pubDate>
+    <author>jpeggdev@gmail.com (Jeff Pegg)</author>
+    <category>AI</category><category>Future</category><category>Opinion</category>
+  </item>
+
+    </channel>
+  </rss>

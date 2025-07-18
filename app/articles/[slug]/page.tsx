@@ -5,46 +5,16 @@ import { Badge } from "@/components/ui/badge"
 import { CalendarIcon, ChevronLeft, Share2 } from "lucide-react"
 import { CodeSnippet } from "@/components/code-snippet"
 import { CommentSection } from "@/components/comment-section"
+import { getArticleBySlug } from "@/lib/content"
+import { notFound } from "next/navigation"
 
-// This is a mock function to simulate fetching article data
-function getArticleData(slug: string) {
-  // In a real app, this would fetch data from an API or database
-  return {
-    title: "Building Your First Neural Network in Python",
-    description: "A step-by-step guide to implementing a neural network from scratch using NumPy.",
-    date: "July 10, 2025",
-    author: "Alex Chen",
-    category: "Machine Learning",
-    image: "/placeholder.svg?height=400&width=800",
-    content: `
-      <p>Neural networks are the backbone of modern AI systems. In this tutorial, we'll build a simple neural network from scratch using only NumPy, to help you understand the fundamental concepts.</p>
-      
-      <h2>Understanding the Basics</h2>
-      <p>Before we dive into the code, let's understand what a neural network is. At its core, a neural network is a series of algorithms that attempts to recognize underlying relationships in a set of data through a process that mimics how the human brain operates.</p>
-      
-      <h2>Setting Up Our Environment</h2>
-      <p>First, let's make sure we have NumPy installed and import the necessary libraries:</p>
-      
-      <h2>Implementing the Neural Network</h2>
-      <p>Now, let's implement a simple feedforward neural network with one hidden layer:</p>
-      
-      <h2>Training the Network</h2>
-      <p>With our neural network class defined, we can now train it on some data:</p>
-      
-      <h2>Testing Our Neural Network</h2>
-      <p>Let's test our neural network on some new data to see how well it performs:</p>
-      
-      <h2>Visualizing the Results</h2>
-      <p>It's always helpful to visualize the results of our neural network to better understand its performance:</p>
-      
-      <h2>Conclusion</h2>
-      <p>In this tutorial, we've built a simple neural network from scratch using NumPy. This should give you a solid understanding of how neural networks work under the hood. In future articles, we'll explore more advanced topics like convolutional neural networks and recurrent neural networks.</p>
-    `,
+export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const article = getArticleBySlug(slug)
+  
+  if (!article) {
+    notFound()
   }
-}
-
-export default function ArticlePage({ params }: { params: { slug: string } }) {
-  const article = getArticleData(params.slug)
 
   return (
     <article className="container py-12">
@@ -91,167 +61,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
       </div>
 
       <div className="prose prose-lg dark:prose-invert max-w-none">
-        <p>
-          Neural networks are the backbone of modern AI systems. In this tutorial, we'll build a simple neural network
-          from scratch using only NumPy, to help you understand the fundamental concepts.
-        </p>
-
-        <h2>Understanding the Basics</h2>
-        <p>
-          Before we dive into the code, let's understand what a neural network is. At its core, a neural network is a
-          series of algorithms that attempts to recognize underlying relationships in a set of data through a process
-          that mimics how the human brain operates.
-        </p>
-
-        <h2>Setting Up Our Environment</h2>
-        <p>First, let's make sure we have NumPy installed and import the necessary libraries:</p>
-
-        <CodeSnippet
-          title="Setting up the environment"
-          language="python"
-          code={`import numpy as np
-import matplotlib.pyplot as plt
-
-# Set random seed for reproducibility
-np.random.seed(42)`}
-        />
-
-        <h2>Implementing the Neural Network</h2>
-        <p>Now, let's implement a simple feedforward neural network with one hidden layer:</p>
-
-        <CodeSnippet
-          title="Neural Network Implementation"
-          language="python"
-          code={`class NeuralNetwork:
-    def __init__(self, input_size, hidden_size, output_size):
-        # Initialize weights and biases
-        self.W1 = np.random.randn(input_size, hidden_size) * 0.01
-        self.b1 = np.zeros((1, hidden_size))
-        self.W2 = np.random.randn(hidden_size, output_size) * 0.01
-        self.b2 = np.zeros((1, output_size))
-        
-    def sigmoid(self, x):
-        return 1 / (1 + np.exp(-x))
-    
-    def sigmoid_derivative(self, x):
-        return x * (1 - x)
-    
-    def forward(self, X):
-        # Forward propagation
-        self.z1 = np.dot(X, self.W1) + self.b1
-        self.a1 = self.sigmoid(self.z1)
-        self.z2 = np.dot(self.a1, self.W2) + self.b2
-        self.a2 = self.sigmoid(self.z2)
-        return self.a2
-    
-    def backward(self, X, y, output, learning_rate):
-        # Backward propagation
-        m = X.shape[0]
-        
-        # Calculate gradients
-        dz2 = output - y
-        dW2 = np.dot(self.a1.T, dz2) / m
-        db2 = np.sum(dz2, axis=0, keepdims=True) / m
-        
-        dz1 = np.dot(dz2, self.W2.T) * self.sigmoid_derivative(self.a1)
-        dW1 = np.dot(X.T, dz1) / m
-        db1 = np.sum(dz1, axis=0, keepdims=True) / m
-        
-        # Update parameters
-        self.W2 -= learning_rate * dW2
-        self.b2 -= learning_rate * db2
-        self.W1 -= learning_rate * dW1
-        self.b1 -= learning_rate * db1
-    
-    def train(self, X, y, epochs, learning_rate):
-        losses = []
-        
-        for epoch in range(epochs):
-            # Forward propagation
-            output = self.forward(X)
-            
-            # Calculate loss
-            loss = -np.mean(y * np.log(output) + (1 - y) * np.log(1 - output))
-            losses.append(loss)
-            
-            # Backward propagation
-            self.backward(X, y, output, learning_rate)
-            
-            if epoch % 100 == 0:
-                print(f"Epoch {epoch}, Loss: {loss}")
-        
-        return losses`}
-        />
-
-        <h2>Training the Network</h2>
-        <p>With our neural network class defined, we can now train it on some data:</p>
-
-        <CodeSnippet
-          title="Training the Neural Network"
-          language="python"
-          code={`# Generate some sample data (XOR problem)
-X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
-y = np.array([[0], [1], [1], [0]])
-
-# Create and train the neural network
-nn = NeuralNetwork(input_size=2, hidden_size=4, output_size=1)
-losses = nn.train(X, y, epochs=10000, learning_rate=0.1)
-
-# Plot the loss over time
-plt.figure(figsize=(10, 6))
-plt.plot(losses)
-plt.title('Loss over Training')
-plt.xlabel('Epochs')
-plt.ylabel('Loss')
-plt.grid(True)
-plt.show()`}
-        />
-
-        <h2>Testing Our Neural Network</h2>
-        <p>Let's test our neural network on some new data to see how well it performs:</p>
-
-        <CodeSnippet
-          title="Testing the Neural Network"
-          language="python"
-          code={`# Test the trained network
-predictions = nn.forward(X)
-print("Predictions:")
-for i in range(len(X)):
-    print(f"Input: {X[i]}, Target: {y[i][0]}, Prediction: {predictions[i][0]:.4f}")`}
-        />
-
-        <h2>Visualizing the Results</h2>
-        <p>It's always helpful to visualize the results of our neural network to better understand its performance:</p>
-
-        <CodeSnippet
-          title="Visualizing the Decision Boundary"
-          language="python"
-          code={`# Create a mesh grid to visualize the decision boundary
-h = 0.01
-x_min, x_max = -0.5, 1.5
-y_min, y_max = -0.5, 1.5
-xx, yy = np.meshgrid(np.arange(x_min, x_max, h), np.arange(y_min, y_max, h))
-Z = nn.forward(np.c_[xx.ravel(), yy.ravel()])
-Z = Z.reshape(xx.shape)
-
-# Plot the decision boundary
-plt.figure(figsize=(10, 8))
-plt.contourf(xx, yy, Z, cmap=plt.cm.Spectral, alpha=0.8)
-plt.scatter(X[:, 0], X[:, 1], c=y.ravel(), cmap=plt.cm.Spectral, edgecolors='k')
-plt.xlim(xx.min(), xx.max())
-plt.ylim(yy.min(), yy.max())
-plt.title('Neural Network Decision Boundary')
-plt.xlabel('Feature 1')
-plt.ylabel('Feature 2')
-plt.show()`}
-        />
-
-        <h2>Conclusion</h2>
-        <p>
-          In this tutorial, we've built a simple neural network from scratch using NumPy. This should give you a solid
-          understanding of how neural networks work under the hood. In future articles, we'll explore more advanced
-          topics like convolutional neural networks and recurrent neural networks.
-        </p>
+        <div dangerouslySetInnerHTML={{ __html: article.content }} />
 
         <div className="not-prose mt-8 flex items-center justify-between border-t border-border pt-8">
           <div>
@@ -324,7 +134,7 @@ plt.show()`}
       </div>
       {/* Comments Section */}
       <div className="mt-16 border-t border-border pt-8">
-        <CommentSection articleSlug={params.slug} />
+        <CommentSection articleSlug={slug} />
       </div>
     </article>
   )

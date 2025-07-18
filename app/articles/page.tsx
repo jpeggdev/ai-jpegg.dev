@@ -3,8 +3,10 @@ import { Input } from "@/components/ui/input"
 import { FeaturedPost } from "@/components/featured-post"
 import { Badge } from "@/components/ui/badge"
 import { Search } from "lucide-react"
+import { getAllArticles } from "@/lib/content"
 
 export default function ArticlesPage() {
+  const articles = getAllArticles()
   return (
     <div className="container py-12">
       <div className="flex flex-col gap-2 mb-8">
@@ -41,78 +43,17 @@ export default function ArticlesPage() {
 
       {/* Articles Grid */}
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        <FeaturedPost
-          title="Building Your First Neural Network in Python"
-          description="A step-by-step guide to implementing a neural network from scratch using NumPy."
-          date="July 10, 2025"
-          category="Machine Learning"
-          image="/placeholder.svg?height=200&width=400"
-          slug="/articles/building-your-first-neural-network"
-        />
-        <FeaturedPost
-          title="Understanding Transformer Architecture"
-          description="Deep dive into the architecture that powers modern language models like GPT-4."
-          date="July 8, 2025"
-          category="Deep Learning"
-          image="/placeholder.svg?height=200&width=400"
-          slug="/articles/understanding-transformer-architecture"
-        />
-        <FeaturedPost
-          title="Practical Guide to Prompt Engineering"
-          description="Learn effective techniques to craft prompts that get the best results from AI models."
-          date="July 5, 2025"
-          category="AI Engineering"
-          image="/placeholder.svg?height=200&width=400"
-          slug="/articles/practical-guide-to-prompt-engineering"
-        />
-        <FeaturedPost
-          title="Implementing Attention Mechanisms"
-          description="A detailed look at how attention mechanisms work in neural networks with code examples."
-          date="July 3, 2025"
-          category="Deep Learning"
-          image="/placeholder.svg?height=200&width=400"
-          slug="/articles/implementing-attention-mechanisms"
-        />
-        <FeaturedPost
-          title="Fine-tuning LLMs for Specific Tasks"
-          description="How to fine-tune large language models for domain-specific applications."
-          date="June 30, 2025"
-          category="AI Engineering"
-          image="/placeholder.svg?height=200&width=400"
-          slug="/articles/fine-tuning-llms"
-        />
-        <FeaturedPost
-          title="Building AI-Powered Applications with the AI SDK"
-          description="Learn how to use the AI SDK to build applications with AI capabilities."
-          date="June 28, 2025"
-          category="AI Engineering"
-          image="/placeholder.svg?height=200&width=400"
-          slug="/articles/ai-sdk-applications"
-        />
-        <FeaturedPost
-          title="Reinforcement Learning from Human Feedback"
-          description="Understanding how RLHF works and how it's used to train modern AI systems."
-          date="June 25, 2025"
-          category="Machine Learning"
-          image="/placeholder.svg?height=200&width=400"
-          slug="/articles/reinforcement-learning-human-feedback"
-        />
-        <FeaturedPost
-          title="Optimizing Neural Networks for Production"
-          description="Techniques for making neural networks faster and more efficient in production environments."
-          date="June 22, 2025"
-          category="Neural Networks"
-          image="/placeholder.svg?height=200&width=400"
-          slug="/articles/optimizing-neural-networks"
-        />
-        <FeaturedPost
-          title="Understanding Embeddings in AI"
-          description="A comprehensive guide to vector embeddings and their applications in AI."
-          date="June 20, 2025"
-          category="AI Engineering"
-          image="/placeholder.svg?height=200&width=400"
-          slug="/articles/understanding-embeddings"
-        />
+        {articles.map((article) => (
+          <FeaturedPost
+            key={article.slug}
+            title={article.title}
+            description={article.description}
+            date={article.date}
+            category={article.category}
+            image={article.image}
+            slug={`/articles/${article.slug}`}
+          />
+        ))}
       </div>
 
       {/* Pagination */}

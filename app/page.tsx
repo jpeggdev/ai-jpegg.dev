@@ -13,13 +13,13 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative overflow-hidden border-b border-border/40 bg-gradient-to-b from-background to-background/80 py-24">
         <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]" />
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 via-transparent to-teal-500/10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-green-700/10 via-transparent to-teal-500/10" />
         <div className="container relative space-y-8">
           <div className="flex flex-col items-center text-center space-y-4">
             <Badge className="px-4 py-1 text-base" variant="secondary">
               <Sparkles className="mr-1 h-3.5 w-3.5" />A Programmer's Perspective on AI
             </Badge>
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl bg-gradient-to-r from-purple-400 via-foreground to-teal-400 bg-clip-text text-transparent">
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl bg-gradient-to-r from-green-500 via-foreground to-teal-400 bg-clip-text text-transparent">
               Decoding AI for Developers
             </h1>
             <p className="max-w-[42rem] text-muted-foreground sm:text-xl">
